@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://gooruds5dyqk"]
+
+[ext_resource type="Texture2D" uid="uid://r118ymsbyho7" path="res://assets/end_flag.png" id="1_xgg7f"]
+[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="2_jnmx5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 189.0
+offset_top = 393.0
+offset_right = 210.0
+offset_bottom = 530.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 210.0
+offset_top = 393.0
+offset_right = 262.0
+offset_bottom = 446.0
+texture = ExtResource("1_xgg7f")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 187.0
+offset_top = 331.0
+offset_right = 277.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jnmx5")
+theme_override_font_sizes/font_size = 60
+text = "END"
