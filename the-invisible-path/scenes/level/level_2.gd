@@ -22,4 +22,3 @@ func _process(delta):
 			colorRect.modulate.b = 1.0
 			is_white = true
 			label.add_theme_color_override("font_color", Color(0, 0, 0, 1))
-			
