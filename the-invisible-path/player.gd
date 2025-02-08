@@ -7,11 +7,26 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_crouching = false
 var crounch_reset = false
 var player_pos_y = 0
+var is_white = false
+
+@onready var colorRect = $ColorRect
 
 func _ready():
 	player_pos_y = $ColorRect.position.y
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("toggle_box"):
+		if !is_white:
+			colorRect.color.r = 1
+			colorRect.color.g = 1
+			colorRect.color.b = 1
+			is_white = true
+		else:
+			colorRect.color.r = 0
+			colorRect.color.g = 0
+			colorRect.color.b = 0
+			is_white = false
+
 	if not is_on_floor():
 		velocity.y += gravity * delta
 

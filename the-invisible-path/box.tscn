@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1rtnvuetw0w6"]
+[gd_scene load_steps=3 format=3 uid="uid://b1rtnvuetw0w6"]
+
+[ext_resource type="Script" path="res://box.gd" id="1_veoib"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ieopp"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_veoib")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ieopp")
@@ -12,3 +15,4 @@ offset_left = -10.0
 offset_top = -10.0
 offset_right = 10.0
 offset_bottom = 10.0
+color = Color(0, 0, 0, 1)
