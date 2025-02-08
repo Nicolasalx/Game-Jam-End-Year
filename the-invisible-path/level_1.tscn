@@ -3,18 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_am7j8"]
 [ext_resource type="Script" path="res://level_1.gd" id="1_ut6uy"]
 [ext_resource type="PackedScene" uid="uid://ciy1ol0hf1wva" path="res://player.tscn" id="2_hjboj"]
-[ext_resource type="PackedScene" uid="uid://dyihc5gtgqfit" path="res://active_box_2.tscn" id="3_crbsk"]
-[ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="4_kycfx"]
-[ext_resource type="PackedScene" uid="uid://gooruds5dyqk" path="res://end_flag.tscn" id="6_qx11f"]
-[ext_resource type="PackedScene" uid="uid://b5lv1ie2xh41o" path="res://start_flag.tscn" id="7_81qsb"]
-[ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="8_qag6u"]
+[ext_resource type="PackedScene" uid="uid://cf2ue0wtwp6tt" path="res://active_box_2.tscn" id="3_crbsk"]
+[ext_resource type="PackedScene" uid="uid://f465ls1gqlwh" path="res://active_box_1.tscn" id="4_kycfx"]
+[ext_resource type="PackedScene" uid="uid://60fn68fp312s" path="res://box_spawner.tscn" id="7_76j3s"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+offset_top = 1.0
 offset_right = 1920.0
-offset_bottom = 1080.0
+offset_bottom = 1081.0
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("1_am7j8")]
 position = Vector2(1920, 700)
