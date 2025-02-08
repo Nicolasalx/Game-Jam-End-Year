@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d2nfngks2dwg"]
+[gd_scene load_steps=7 format=3 uid="uid://d2nfngks2dwg"]
 
 [ext_resource type="PackedScene" uid="uid://b1rtnvuetw0w6" path="res://box.tscn" id="1_am7j8"]
 [ext_resource type="Script" path="res://level_1.gd" id="1_ut6uy"]
 [ext_resource type="PackedScene" uid="uid://ewfypk33jepk" path="res://player.tscn" id="2_hjboj"]
 [ext_resource type="PackedScene" uid="uid://cf2ue0wtwp6tt" path="res://active_box_2.tscn" id="3_crbsk"]
 [ext_resource type="PackedScene" uid="uid://f465ls1gqlwh" path="res://active_box_1.tscn" id="4_kycfx"]
+[ext_resource type="PackedScene" uid="uid://60fn68fp312s" path="res://box_spawner.tscn" id="7_76j3s"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
@@ -43,3 +44,11 @@ scale = Vector2(5, 1)
 [node name="StaticBody2D2" parent="." instance=ExtResource("4_kycfx")]
 position = Vector2(1135, 842)
 scale = Vector2(5, 1)
+
+[node name="box_spawner" parent="." instance=ExtResource("7_76j3s")]
+position = Vector2(913, 11)
+spawn_rate_min = 0.3
+spawn_rate_max = 1.5
+launch_speed = 1000.0
+angle_min = 0.0
+angle_max = 180.0
