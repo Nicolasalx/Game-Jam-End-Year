@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://buxh3xvl7myg2"]
 
 [ext_resource type="Script" path="res://void.gd" id="1_bb4rt"]
+[ext_resource type="AudioStream" uid="uid://dx2o2gl3dh3so" path="res://songs/ded.mp3" id="2_o0kl1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5i1s5"]
 size = Vector2(964.5, 38.5)
@@ -15,5 +16,8 @@ script = ExtResource("1_bb4rt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(488.5, 547)
 shape = SubResource("RectangleShape2D_5i1s5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_o0kl1")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
