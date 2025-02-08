@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://2wfrownoxvqx"]
+[gd_scene load_steps=12 format=3 uid="uid://2wfrownoxvqx"]
 
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_am7j8"]
 [ext_resource type="Script" path="res://scenes/level/level_1.gd" id="1_ut6uy"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://qdfteksy4ti6" path="res://scenes/flag/flag_level_1.tscn" id="8_weun1"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_wv6uh"]
 [ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_70pqy"]
+[ext_resource type="PackedScene" uid="uid://begk2tvmfu5qi" path="res://void.tscn" id="11_a7f2i"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
@@ -96,3 +97,6 @@ text = "LEVEL 1"
 stream = ExtResource("10_70pqy")
 autoplay = true
 parameters/looping = true
+
+[node name="Node2D" parent="." instance=ExtResource("11_a7f2i")]
+position = Vector2(-20, -1)
