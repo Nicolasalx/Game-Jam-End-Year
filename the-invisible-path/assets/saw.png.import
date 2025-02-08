@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cchpya7l8mpqs"
-valid=false
+uid="uid://bpnq7tc0dbj35"
+path="res://.godot/imported/saw.png-6da227498c244ab4d8a44627b9f83be9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/saw.png"
+dest_files=["res://.godot/imported/saw.png-6da227498c244ab4d8a44627b9f83be9.ctex"]
 
 [params]
 
