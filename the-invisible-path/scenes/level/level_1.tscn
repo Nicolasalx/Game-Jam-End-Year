@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://2wfrownoxvqx"]
+[gd_scene load_steps=11 format=3 uid="uid://2wfrownoxvqx"]
 
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_am7j8"]
 [ext_resource type="Script" path="res://scenes/level/level_1.gd" id="1_ut6uy"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="8_qag6u"]
 [ext_resource type="PackedScene" uid="uid://qdfteksy4ti6" path="res://scenes/flag/flag_level_1.tscn" id="8_weun1"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_wv6uh"]
+[ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_70pqy"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
@@ -77,7 +78,7 @@ scale = Vector2(8, 1)
 [node name="StartFlag1" parent="." instance=ExtResource("8_weun1")]
 position = Vector2(11, 932)
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -90,3 +91,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("9_wv6uh")
 theme_override_font_sizes/font_size = 80
 text = "LEVEL 1"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_70pqy")
+autoplay = true
+parameters/looping = true
