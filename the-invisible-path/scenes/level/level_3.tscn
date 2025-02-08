@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqeaihkodeohd"]
+[gd_scene load_steps=12 format=3 uid="uid://cqeaihkodeohd"]
 
 [ext_resource type="Script" path="res://scenes/level/level_3.gd" id="1_8wc6g"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_r6ipt"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bjuv4pu2bfrf7" path="res://scenes/flag/flag_level_3.tscn" id="8_nyy3t"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_alt3r"]
 [ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_vc0i1"]
+[ext_resource type="PackedScene" uid="uid://begk2tvmfu5qi" path="res://void.tscn" id="11_xw3wa"]
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_8wc6g")
@@ -25,10 +26,6 @@ scale = Vector2(2, 80)
 [node name="StaticBody2D" parent="." instance=ExtResource("2_r6ipt")]
 position = Vector2(1737, 956)
 scale = Vector2(25.24, 1.76)
-
-[node name="StaticBody2D4" parent="." instance=ExtResource("2_r6ipt")]
-position = Vector2(968, 1083)
-scale = Vector2(100, 2)
 
 [node name="StaticBody2D5" parent="." instance=ExtResource("2_r6ipt")]
 position = Vector2(-10, 593)
@@ -101,3 +98,6 @@ text = "LEVEL 3
 stream = ExtResource("10_vc0i1")
 autoplay = true
 parameters/looping = true
+
+[node name="Node2D" parent="." instance=ExtResource("11_xw3wa")]
+position = Vector2(-20, 1)

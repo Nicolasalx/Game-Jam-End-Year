@@ -54,4 +54,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
 
+	if Global.alive == false:
+		position.x = 1700
+		position.y = 800
+		Global.alive = true
+	
 	move_and_slide()
