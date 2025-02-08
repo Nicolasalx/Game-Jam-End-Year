@@ -19,14 +19,6 @@ script = ExtResource("1_o1xxr")
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="StaticBody2D2" parent="ColorRect" instance=ExtResource("5_m56bo")]
-position = Vector2(1145, 996)
-scale = Vector2(5, 1)
-
-[node name="StaticBody2D12" parent="ColorRect" instance=ExtResource("4_phrsv")]
-position = Vector2(616, 884)
-scale = Vector2(8, 1)
-
 [node name="StaticBody2D10" parent="ColorRect" instance=ExtResource("5_m56bo")]
 position = Vector2(792, 857)
 scale = Vector2(6, 1)
@@ -47,7 +39,7 @@ scale = Vector2(1, 74.4)
 position = Vector2(1696, 850)
 
 [node name="StaticBody2D8" parent="." instance=ExtResource("4_phrsv")]
-position = Vector2(1266, 980)
+position = Vector2(1250, 930)
 scale = Vector2(3, 1)
 
 [node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("4_phrsv")]
@@ -56,10 +48,6 @@ scale = Vector2(3, 1)
 
 [node name="StaticBody2D9" parent="." instance=ExtResource("5_m56bo")]
 position = Vector2(1393, 929)
-scale = Vector2(5, 1)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("5_m56bo")]
-position = Vector2(999, 990)
 scale = Vector2(5, 1)
 
 [node name="EndFlag" parent="." instance=ExtResource("6_qb355")]
@@ -112,3 +100,7 @@ autoplay = true
 parameters/looping = true
 
 [node name="Node2D" parent="." instance=ExtResource("11_lxrii")]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("4_phrsv")]
+position = Vector2(629, 857)
+scale = Vector2(4, 1)
