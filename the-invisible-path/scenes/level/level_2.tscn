@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://y4k5w0dvpilr"]
+[gd_scene load_steps=12 format=3 uid="uid://y4k5w0dvpilr"]
 
 [ext_resource type="Script" path="res://scenes/level/level_2.gd" id="1_4hfod"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_kutej"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://ccoqr8u8p2k3t" path="res://scenes/flag/flag_level_2.tscn" id="8_bqo23"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_x18ax"]
 [ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_pyela"]
+[ext_resource type="PackedScene" path="res://void.tscn" id="11_fwnk5"]
 
 [node name="level_2" type="Node2D"]
 script = ExtResource("1_4hfod")
@@ -33,20 +34,8 @@ scale = Vector2(1, 74.4)
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_d6aoj")]
 position = Vector2(1696, 850)
 
-[node name="StaticBody2D8" parent="." instance=ExtResource("4_h3v4p")]
-position = Vector2(1260, 884)
-scale = Vector2(3, 1)
-
-[node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("4_h3v4p")]
-position = Vector2(1260, 884)
-scale = Vector2(3, 1)
-
 [node name="StaticBody2D9" parent="." instance=ExtResource("5_0ouwp")]
-position = Vector2(1393, 929)
-scale = Vector2(5, 1)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("5_0ouwp")]
-position = Vector2(1135, 842)
+position = Vector2(1411, 879)
 scale = Vector2(5, 1)
 
 [node name="EndFlag" parent="." instance=ExtResource("6_lfan4")]
@@ -55,25 +44,9 @@ scale = Vector2(0.6, 0.6)
 
 [node name="box_spawner" parent="." instance=ExtResource("7_mves2")]
 
-[node name="StaticBody2D6" parent="." instance=ExtResource("2_kutej")]
-position = Vector2(931, 841)
-scale = Vector2(7, 1)
-
-[node name="StaticBody2D7" parent="." instance=ExtResource("4_h3v4p")]
-position = Vector2(733, 812)
-scale = Vector2(6, 1)
-
-[node name="StaticBody2D10" parent="." instance=ExtResource("5_0ouwp")]
-position = Vector2(532, 793)
-scale = Vector2(6, 1)
-
 [node name="StaticBody2D11" parent="." instance=ExtResource("2_kutej")]
 position = Vector2(78, 942)
 scale = Vector2(8, 1.5)
-
-[node name="StaticBody2D12" parent="." instance=ExtResource("4_h3v4p")]
-position = Vector2(318, 874)
-scale = Vector2(8, 1)
 
 [node name="StartFlag2" parent="." instance=ExtResource("8_bqo23")]
 position = Vector2(4, 947)
@@ -96,3 +69,50 @@ text = "LEVEL 2"
 stream = ExtResource("10_pyela")
 autoplay = true
 parameters/looping = true
+
+[node name="Node2D" parent="." instance=ExtResource("11_fwnk5")]
+position = Vector2(-32, 9)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(1407, 797)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("5_0ouwp")]
+position = Vector2(1405, 713)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(1401, 635)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("5_0ouwp")]
+position = Vector2(1403, 553)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(1393, 468)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("5_0ouwp")]
+position = Vector2(1391, 382)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(1385, 282)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(949, 308)
+scale = Vector2(15, 1)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("5_0ouwp")]
+position = Vector2(1219, 294)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("5_0ouwp")]
+position = Vector2(511, 910)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("4_h3v4p")]
+position = Vector2(319, 906)
+scale = Vector2(4, 1)
