@@ -34,47 +34,15 @@ scale = Vector2(1, 74.4)
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_hjboj")]
 position = Vector2(1696, 850)
 
-[node name="StaticBody2D8" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(1260, 884)
-scale = Vector2(3, 1)
-
-[node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("3_crbsk")]
-position = Vector2(1260, 884)
-scale = Vector2(3, 1)
-
-[node name="StaticBody2D9" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(1393, 929)
-scale = Vector2(5, 1)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(1135, 842)
-scale = Vector2(5, 1)
-
 [node name="EndFlag" parent="." instance=ExtResource("6_qx11f")]
 position = Vector2(1504, 939)
 scale = Vector2(0.6, 0.6)
 
 [node name="box_spawner" parent="." instance=ExtResource("8_qag6u")]
 
-[node name="StaticBody2D6" parent="." instance=ExtResource("1_am7j8")]
-position = Vector2(931, 841)
-scale = Vector2(7, 1)
-
-[node name="StaticBody2D7" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(733, 812)
-scale = Vector2(6, 1)
-
-[node name="StaticBody2D10" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(532, 793)
-scale = Vector2(6, 1)
-
 [node name="StaticBody2D11" parent="." instance=ExtResource("1_am7j8")]
 position = Vector2(78, 942)
 scale = Vector2(8, 1.5)
-
-[node name="StaticBody2D12" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(318, 874)
-scale = Vector2(8, 1)
 
 [node name="StartFlag1" parent="." instance=ExtResource("8_weun1")]
 position = Vector2(11, 932)
@@ -100,3 +68,42 @@ parameters/looping = true
 
 [node name="Node2D" parent="." instance=ExtResource("11_a7f2i")]
 position = Vector2(-20, -1)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(1384, 910)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(1308, 845)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(1404, 766)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(1280, 706)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(1138, 792)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(982, 735)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(875, 797)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(765, 760)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(655, 681)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(536, 636)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(428, 854)
+
+[node name="StaticBody2D16" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(324, 811)
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(241, 890)

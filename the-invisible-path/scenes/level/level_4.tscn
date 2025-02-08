@@ -19,6 +19,18 @@ script = ExtResource("1_o1xxr")
 offset_right = 1920.0
 offset_bottom = 1080.0
 
+[node name="StaticBody2D2" parent="ColorRect" instance=ExtResource("5_m56bo")]
+position = Vector2(1145, 996)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D12" parent="ColorRect" instance=ExtResource("4_phrsv")]
+position = Vector2(616, 884)
+scale = Vector2(8, 1)
+
+[node name="StaticBody2D10" parent="ColorRect" instance=ExtResource("5_m56bo")]
+position = Vector2(792, 857)
+scale = Vector2(6, 1)
+
 [node name="StaticBody2D3" parent="." instance=ExtResource("2_1h1xj")]
 position = Vector2(1920, 700)
 scale = Vector2(2, 80)
@@ -35,7 +47,7 @@ scale = Vector2(1, 74.4)
 position = Vector2(1696, 850)
 
 [node name="StaticBody2D8" parent="." instance=ExtResource("4_phrsv")]
-position = Vector2(1260, 884)
+position = Vector2(1266, 980)
 scale = Vector2(3, 1)
 
 [node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("4_phrsv")]
@@ -47,7 +59,7 @@ position = Vector2(1393, 929)
 scale = Vector2(5, 1)
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("5_m56bo")]
-position = Vector2(1135, 842)
+position = Vector2(999, 990)
 scale = Vector2(5, 1)
 
 [node name="EndFlag" parent="." instance=ExtResource("6_qb355")]
@@ -57,15 +69,15 @@ scale = Vector2(0.6, 0.6)
 [node name="box_spawner" parent="." instance=ExtResource("7_iacm8")]
 
 [node name="StaticBody2D6" parent="." instance=ExtResource("2_1h1xj")]
-position = Vector2(931, 841)
+position = Vector2(951, 895)
 scale = Vector2(7, 1)
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("4_phrsv")]
-position = Vector2(733, 812)
+position = Vector2(1113, 934)
 scale = Vector2(6, 1)
 
 [node name="StaticBody2D10" parent="." instance=ExtResource("5_m56bo")]
-position = Vector2(532, 793)
+position = Vector2(444, 865)
 scale = Vector2(6, 1)
 
 [node name="StaticBody2D11" parent="." instance=ExtResource("2_1h1xj")]
@@ -73,7 +85,7 @@ position = Vector2(78, 942)
 scale = Vector2(8, 1.5)
 
 [node name="StaticBody2D12" parent="." instance=ExtResource("4_phrsv")]
-position = Vector2(318, 874)
+position = Vector2(290, 910)
 scale = Vector2(8, 1)
 
 [node name="StartFlag4" parent="." instance=ExtResource("8_08fp7")]

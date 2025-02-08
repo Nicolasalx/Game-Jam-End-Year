@@ -19,6 +19,10 @@ script = ExtResource("1_8wc6g")
 offset_right = 1920.0
 offset_bottom = 1080.0
 
+[node name="StaticBody2D10" parent="ColorRect" instance=ExtResource("5_0ci6w")]
+position = Vector2(482, 915)
+scale = Vector2(6, 1)
+
 [node name="StaticBody2D3" parent="." instance=ExtResource("2_r6ipt")]
 position = Vector2(1920, 700)
 scale = Vector2(2, 80)
@@ -35,11 +39,7 @@ scale = Vector2(1, 74.4)
 position = Vector2(1696, 850)
 
 [node name="StaticBody2D8" parent="." instance=ExtResource("4_yn7m3")]
-position = Vector2(1260, 884)
-scale = Vector2(3, 1)
-
-[node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("4_yn7m3")]
-position = Vector2(1260, 884)
+position = Vector2(1246, 858)
 scale = Vector2(3, 1)
 
 [node name="StaticBody2D9" parent="." instance=ExtResource("5_0ci6w")]
@@ -47,8 +47,8 @@ position = Vector2(1393, 929)
 scale = Vector2(5, 1)
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("5_0ci6w")]
-position = Vector2(1135, 842)
-scale = Vector2(5, 1)
+position = Vector2(1413, 815)
+scale = Vector2(4, 1)
 
 [node name="EndFlag" parent="." instance=ExtResource("6_sppve")]
 position = Vector2(1504, 939)
@@ -56,16 +56,18 @@ scale = Vector2(0.6, 0.6)
 
 [node name="box_spawner" parent="." instance=ExtResource("7_yeumf")]
 
+[node name="StaticBody2D4" parent="." instance=ExtResource("4_yn7m3")]
+
 [node name="StaticBody2D6" parent="." instance=ExtResource("2_r6ipt")]
-position = Vector2(931, 841)
-scale = Vector2(7, 1)
+position = Vector2(1259, 748)
+scale = Vector2(4, 1)
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("4_yn7m3")]
-position = Vector2(733, 812)
-scale = Vector2(6, 1)
+position = Vector2(668, 917)
+scale = Vector2(7, 1.167)
 
 [node name="StaticBody2D10" parent="." instance=ExtResource("5_0ci6w")]
-position = Vector2(532, 793)
+position = Vector2(915, 646)
 scale = Vector2(6, 1)
 
 [node name="StaticBody2D11" parent="." instance=ExtResource("2_r6ipt")]
@@ -73,7 +75,7 @@ position = Vector2(78, 942)
 scale = Vector2(8, 1.5)
 
 [node name="StaticBody2D12" parent="." instance=ExtResource("4_yn7m3")]
-position = Vector2(318, 874)
+position = Vector2(293, 910)
 scale = Vector2(8, 1)
 
 [node name="StartFlag3" parent="." instance=ExtResource("8_nyy3t")]
@@ -101,3 +103,11 @@ parameters/looping = true
 
 [node name="Node2D" parent="." instance=ExtResource("11_xw3wa")]
 position = Vector2(-20, 1)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("4_yn7m3")]
+position = Vector2(1132, 697)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("4_yn7m3")]
+position = Vector2(1047, 667)
+scale = Vector2(2, 1)
