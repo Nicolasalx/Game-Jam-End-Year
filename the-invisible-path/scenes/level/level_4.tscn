@@ -10,9 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://2w06fhblytau" path="res://scenes/flag/flag_level_4.tscn" id="8_08fp7"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_6bvel"]
 [ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_rm8qg"]
-[ext_resource type="PackedScene" uid="uid://ckqsg26yallg4" path="res://scenes/peak/basic_peak.tscn" id="11_f1ckx"]
-[ext_resource type="PackedScene" uid="uid://qd6yry7342yy" path="res://scenes/peak/peak_1.tscn" id="12_50uvp"]
-[ext_resource type="PackedScene" uid="uid://dtgtksx0jvt8c" path="res://scenes/peak/peak_2.tscn" id="13_1vua7"]
+[ext_resource type="PackedScene" uid="uid://begk2tvmfu5qi" path="res://void.tscn" id="11_lxrii"]
 
 [node name="level_4" type="Node2D"]
 script = ExtResource("1_o1xxr")
