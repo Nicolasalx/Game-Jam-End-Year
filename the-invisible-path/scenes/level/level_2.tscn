@@ -81,7 +81,7 @@ scale = Vector2(8, 1)
 [node name="StartFlag2" parent="." instance=ExtResource("8_bqo23")]
 position = Vector2(4, 947)
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
