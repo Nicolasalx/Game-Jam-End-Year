@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://2wfrownoxvqx"]
+[gd_scene load_steps=10 format=3 uid="uid://2wfrownoxvqx"]
 
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_am7j8"]
-[ext_resource type="Script" path="res://level_1.gd" id="1_ut6uy"]
+[ext_resource type="Script" path="res://scenes/level/level_1.gd" id="1_ut6uy"]
 [ext_resource type="PackedScene" uid="uid://ciy1ol0hf1wva" path="res://player.tscn" id="2_hjboj"]
 [ext_resource type="PackedScene" uid="uid://dyihc5gtgqfit" path="res://active_box_2.tscn" id="3_crbsk"]
 [ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="4_kycfx"]
 [ext_resource type="PackedScene" uid="uid://gooruds5dyqk" path="res://end_flag.tscn" id="6_qx11f"]
 [ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="8_qag6u"]
+[ext_resource type="PackedScene" uid="uid://qdfteksy4ti6" path="res://scenes/flag/flag_level_1.tscn" id="8_weun1"]
+[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_wv6uh"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
@@ -38,6 +40,10 @@ position = Vector2(1696, 850)
 position = Vector2(1260, 884)
 scale = Vector2(3, 1)
 
+[node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("3_crbsk")]
+position = Vector2(1260, 884)
+scale = Vector2(3, 1)
+
 [node name="StaticBody2D9" parent="." instance=ExtResource("4_kycfx")]
 position = Vector2(1393, 929)
 scale = Vector2(5, 1)
@@ -51,3 +57,40 @@ position = Vector2(1504, 939)
 scale = Vector2(0.6, 0.6)
 
 [node name="box_spawner" parent="." instance=ExtResource("8_qag6u")]
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("1_am7j8")]
+position = Vector2(931, 841)
+scale = Vector2(7, 1)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(733, 812)
+scale = Vector2(6, 1)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("4_kycfx")]
+position = Vector2(532, 793)
+scale = Vector2(6, 1)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("1_am7j8")]
+position = Vector2(78, 942)
+scale = Vector2(8, 1.5)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("3_crbsk")]
+position = Vector2(318, 874)
+scale = Vector2(8, 1)
+
+[node name="StartFlag1" parent="." instance=ExtResource("8_weun1")]
+position = Vector2(11, 932)
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 827.0
+offset_top = 186.0
+offset_right = 1092.0
+offset_bottom = 260.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_wv6uh")
+theme_override_font_sizes/font_size = 80
+text = "LEVEL 1"

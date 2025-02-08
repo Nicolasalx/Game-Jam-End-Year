@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://wiv3xcockllh"]
+[gd_scene load_steps=7 format=3 uid="uid://dt1xb4itlshli"]
 
-[ext_resource type="Script" path="res://scenes/level/level_5_to_4.gd" id="1_tg55v"]
+[ext_resource type="Script" path="res://scenes/inter_level/level_1_to_menu.gd" id="1_cof6q"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="2_ko3fo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v176"]
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tg55v")
+script = ExtResource("1_cof6q")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -50,7 +50,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_4pc1x")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_q6qbq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wyyjr")
-text = "Go back to level 4"
+text = "Go back to menu"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -76,6 +76,6 @@ offset_bottom = 362.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ko3fo")
 theme_override_font_sizes/font_size = 80
-text = "You are at level 5"
+text = "You are at level 1"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

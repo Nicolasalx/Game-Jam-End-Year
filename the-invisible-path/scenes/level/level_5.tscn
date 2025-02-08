@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=3 uid="uid://bkivstb7gtj1i"]
+
+[ext_resource type="Script" path="res://scenes/level/level_5.gd" id="1_t2ekl"]
+[ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_ev8i2"]
+[ext_resource type="PackedScene" uid="uid://ciy1ol0hf1wva" path="res://player.tscn" id="3_nb5yi"]
+[ext_resource type="PackedScene" uid="uid://dyihc5gtgqfit" path="res://active_box_2.tscn" id="4_rtbpk"]
+[ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="5_hdovq"]
+[ext_resource type="PackedScene" uid="uid://gooruds5dyqk" path="res://end_flag.tscn" id="6_jfgwv"]
+[ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="7_4txw8"]
+[ext_resource type="PackedScene" uid="uid://b5lv1ie2xh41o" path="res://scenes/flag/flag_level_5.tscn" id="8_piy4x"]
+[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_hajna"]
+
+[node name="level_5" type="Node2D"]
+script = ExtResource("1_t2ekl")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(1920, 700)
+scale = Vector2(2, 80)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(1737, 956)
+scale = Vector2(25.24, 1.76)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(968, 1083)
+scale = Vector2(100, 2)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(-10, 593)
+scale = Vector2(1, 74.4)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_nb5yi")]
+position = Vector2(1696, 850)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("4_rtbpk")]
+position = Vector2(1260, 884)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D8" parent="StaticBody2D8" instance=ExtResource("4_rtbpk")]
+position = Vector2(1260, 884)
+scale = Vector2(3, 1)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("5_hdovq")]
+position = Vector2(1393, 929)
+scale = Vector2(5, 1)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_hdovq")]
+position = Vector2(1135, 842)
+scale = Vector2(5, 1)
+
+[node name="EndFlag" parent="." instance=ExtResource("6_jfgwv")]
+position = Vector2(1504, 939)
+scale = Vector2(0.6, 0.6)
+
+[node name="box_spawner" parent="." instance=ExtResource("7_4txw8")]
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(931, 841)
+scale = Vector2(7, 1)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("4_rtbpk")]
+position = Vector2(733, 812)
+scale = Vector2(6, 1)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("5_hdovq")]
+position = Vector2(532, 793)
+scale = Vector2(6, 1)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_ev8i2")]
+position = Vector2(78, 942)
+scale = Vector2(8, 1.5)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("4_rtbpk")]
+position = Vector2(318, 874)
+scale = Vector2(8, 1)
+
+[node name="StartFlag5" parent="." instance=ExtResource("8_piy4x")]
+position = Vector2(12, 943)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 823.0
+offset_top = 194.0
+offset_right = 1088.0
+offset_bottom = 268.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_hajna")
+theme_override_font_sizes/font_size = 80
+text = "LEVEL 5
+"

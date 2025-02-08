@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ce8cfqfyspcpi"]
 
-[ext_resource type="Script" path="res://scenes/level/level_2_to_1.gd" id="1_6q1bx"]
+[ext_resource type="Script" path="res://scenes/inter_level/level_2_to_1.gd" id="1_6q1bx"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="2_ko3fo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v176"]
