@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bnbjl30x8dgx1"]
+[gd_scene load_steps=14 format=3 uid="uid://bnbjl30x8dgx1"]
 
 [ext_resource type="Script" path="res://scenes/level/level_4.gd" id="1_o1xxr"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_1h1xj"]
@@ -10,6 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://2w06fhblytau" path="res://scenes/flag/flag_level_4.tscn" id="8_08fp7"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_6bvel"]
 [ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_rm8qg"]
+[ext_resource type="PackedScene" uid="uid://ckqsg26yallg4" path="res://scenes/peak/basic_peak.tscn" id="11_f1ckx"]
+[ext_resource type="PackedScene" uid="uid://qd6yry7342yy" path="res://scenes/peak/peak_1.tscn" id="12_50uvp"]
+[ext_resource type="PackedScene" uid="uid://dtgtksx0jvt8c" path="res://scenes/peak/peak_2.tscn" id="13_1vua7"]
 
 [node name="level_4" type="Node2D"]
 script = ExtResource("1_o1xxr")
@@ -97,3 +100,27 @@ text = "LEVEL 4
 stream = ExtResource("10_rm8qg")
 autoplay = true
 parameters/looping = true
+
+[node name="BasicPeak" parent="." instance=ExtResource("11_f1ckx")]
+position = Vector2(89, 928)
+scale = Vector2(0.15, 0.1)
+
+[node name="Peak1" parent="." instance=ExtResource("12_50uvp")]
+position = Vector2(495, 786)
+scale = Vector2(0.15, 0.1)
+
+[node name="Peak2" parent="." instance=ExtResource("13_1vua7")]
+position = Vector2(294, 866)
+scale = Vector2(0.15, 0.1)
+
+[node name="Peak22" parent="." instance=ExtResource("13_1vua7")]
+position = Vector2(712, 806)
+scale = Vector2(0.2, 0.1)
+
+[node name="Peak1111" parent="." instance=ExtResource("12_50uvp")]
+position = Vector2(1116, 834)
+scale = Vector2(0.15, 0.1)
+
+[node name="BasicPeak11" parent="." instance=ExtResource("11_f1ckx")]
+position = Vector2(915, 832)
+scale = Vector2(0.13, 0.1)
