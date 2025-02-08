@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://2wfrownoxvqx"]
+[gd_scene load_steps=9 format=3 uid="uid://2wfrownoxvqx"]
 
 [ext_resource type="PackedScene" path="res://box.tscn" id="1_am7j8"]
 [ext_resource type="Script" path="res://level_1.gd" id="1_ut6uy"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="4_kycfx"]
 [ext_resource type="PackedScene" uid="uid://gooruds5dyqk" path="res://end_flag.tscn" id="6_qx11f"]
 [ext_resource type="PackedScene" uid="uid://b5lv1ie2xh41o" path="res://start_flag.tscn" id="7_81qsb"]
+[ext_resource type="PackedScene" path="res://box_spawner.tscn" id="8_qag6u"]
 
 [node name="level_1" type="Node2D"]
 script = ExtResource("1_ut6uy")
@@ -53,3 +54,5 @@ scale = Vector2(0.6, 0.6)
 [node name="StartFlag" parent="." instance=ExtResource("7_81qsb")]
 position = Vector2(-32, 547)
 scale = Vector2(0.6, 0.6)
+
+[node name="box_spawner" parent="." instance=ExtResource("8_qag6u")]
