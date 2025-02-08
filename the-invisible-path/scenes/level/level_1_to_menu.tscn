@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7lewy5sp0t5v"]
+[gd_scene load_steps=7 format=3 uid="uid://dt1xb4itlshli"]
 
-[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="1_k21l7"]
-[ext_resource type="Script" path="res://menu_inter_level.gd" id="1_kay0p"]
+[ext_resource type="Script" path="res://scenes/level/level_1_to_menu.gd" id="1_cof6q"]
+[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="2_ko3fo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v176"]
 bg_color = Color(1, 1, 1, 1)
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kay0p")
+script = ExtResource("1_cof6q")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -45,12 +45,12 @@ offset_right = 1272.0
 offset_bottom = 792.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_k21l7")
+theme_override_fonts/font = ExtResource("2_ko3fo")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_4pc1x")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_q6qbq")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wyyjr")
-text = "Go back to level 4"
+text = "Go back to menu"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -63,18 +63,19 @@ offset_right = 318.0
 offset_bottom = 324.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_k21l7")
+theme_override_fonts/font = ExtResource("2_ko3fo")
 theme_override_font_sizes/font_size = 130
 text = "You loose !"
 
 [node name="Label" type="Label" parent="Label"]
+layout_mode = 0
 offset_left = -10.0
 offset_top = 242.0
 offset_right = 1054.0
 offset_bottom = 362.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_k21l7")
+theme_override_fonts/font = ExtResource("2_ko3fo")
 theme_override_font_sizes/font_size = 80
-text = "You are at level 5"
+text = "You are at level 1"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
