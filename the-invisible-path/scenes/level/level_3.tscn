@@ -25,10 +25,6 @@ scale = Vector2(2, 80)
 position = Vector2(1737, 956)
 scale = Vector2(25.24, 1.76)
 
-[node name="StaticBody2D4" parent="." instance=ExtResource("2_r6ipt")]
-position = Vector2(968, 1083)
-scale = Vector2(100, 2)
-
 [node name="StaticBody2D5" parent="." instance=ExtResource("2_r6ipt")]
 position = Vector2(-10, 593)
 scale = Vector2(1, 74.4)
