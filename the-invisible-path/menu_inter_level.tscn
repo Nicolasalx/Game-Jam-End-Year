@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7lewy5sp0t5v"]
+
+[ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="1_k21l7"]
+[ext_resource type="Script" path="res://menu_inter_level.gd" id="1_kay0p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7v176"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pc1x"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6qbq"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyyjr"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kay0p")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7v176")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 550.0
+offset_right = 1272.0
+offset_bottom = 668.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_k21l7")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_4pc1x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q6qbq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wyyjr")
+text = "Go back to previous level"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 663.0
+offset_top = 204.0
+offset_right = 1289.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_k21l7")
+theme_override_font_sizes/font_size = 130
+text = "You loose !"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
