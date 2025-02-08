@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bkivstb7gtj1i"]
+[gd_scene load_steps=12 format=3 uid="uid://bkivstb7gtj1i"]
 
 [ext_resource type="Script" path="res://scenes/level/level_5.gd" id="1_t2ekl"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_ev8i2"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="7_4txw8"]
 [ext_resource type="PackedScene" uid="uid://b5lv1ie2xh41o" path="res://scenes/flag/flag_level_5.tscn" id="8_piy4x"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_hajna"]
+[ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="11_3yfrv"]
 
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_t2ekl")
@@ -104,3 +105,8 @@ modulate = Color(0, 0, 0, 1)
 position = Vector2(60, 820)
 scale = Vector2(0.171875, 0.21875)
 texture = ExtResource("2_wm027")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_3yfrv")
+autoplay = true
+parameters/looping = true

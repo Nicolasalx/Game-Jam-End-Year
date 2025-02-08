@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bnbjl30x8dgx1"]
+[gd_scene load_steps=11 format=3 uid="uid://bnbjl30x8dgx1"]
 
 [ext_resource type="Script" path="res://scenes/level/level_4.gd" id="1_o1xxr"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_1h1xj"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="7_iacm8"]
 [ext_resource type="PackedScene" uid="uid://2w06fhblytau" path="res://scenes/flag/flag_level_4.tscn" id="8_08fp7"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_6bvel"]
+[ext_resource type="AudioStream" uid="uid://bko50b81gee78" path="res://songs/game_music.mp3" id="10_rm8qg"]
 
 [node name="level_4" type="Node2D"]
 script = ExtResource("1_o1xxr")
@@ -95,3 +96,8 @@ theme_override_fonts/font = ExtResource("9_6bvel")
 theme_override_font_sizes/font_size = 80
 text = "LEVEL 4
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_rm8qg")
+autoplay = true
+parameters/looping = true
