@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bnbjl30x8dgx1"]
+[gd_scene load_steps=13 format=3 uid="uid://bnbjl30x8dgx1"]
 
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_amdju"]
 [ext_resource type="Script" path="res://scenes/level/level_4.gd" id="1_o1xxr"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="8_4eylq"]
 [ext_resource type="PackedScene" uid="uid://2w06fhblytau" path="res://scenes/flag/flag_level_4.tscn" id="8_08fp7"]
 [ext_resource type="PackedScene" uid="uid://dyihc5gtgqfit" path="res://active_box_2.tscn" id="9_1pbu6"]
+[ext_resource type="PackedScene" uid="uid://qd6yry7342yy" path="res://scenes/peak/peak_1.tscn" id="11_4w3nc"]
+[ext_resource type="PackedScene" uid="uid://dtgtksx0jvt8c" path="res://scenes/peak/peak_2.tscn" id="12_m80m7"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_o1xxr")
@@ -102,3 +104,19 @@ scale = Vector2(1, 65)
 
 [node name="Node2D2" parent="." instance=ExtResource("8_08fp7")]
 position = Vector2(23, 929)
+
+[node name="Node2D33" parent="." instance=ExtResource("11_4w3nc")]
+position = Vector2(1240, 719)
+scale = Vector2(0.1, 0.1)
+
+[node name="Node2D3" parent="." instance=ExtResource("11_4w3nc")]
+position = Vector2(1247, 843)
+scale = Vector2(0.1, 0.1)
+
+[node name="Node2D4" parent="." instance=ExtResource("12_m80m7")]
+position = Vector2(1021, 763)
+scale = Vector2(0.1, 0.1)
+
+[node name="Node2D5" parent="." instance=ExtResource("12_m80m7")]
+position = Vector2(1019, 646)
+scale = Vector2(0.1, 0.1)
