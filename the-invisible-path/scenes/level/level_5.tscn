@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://bkivstb7gtj1i"]
+[gd_scene load_steps=11 format=3 uid="uid://bkivstb7gtj1i"]
 
 [ext_resource type="Script" path="res://scenes/level/level_5.gd" id="1_t2ekl"]
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="2_ev8i2"]
-[ext_resource type="Texture2D" uid="uid://r118ymsbyho7" path="res://assets/end_flag.png" id="2_wm027"]
 [ext_resource type="PackedScene" uid="uid://ciy1ol0hf1wva" path="res://player.tscn" id="3_nb5yi"]
 [ext_resource type="PackedScene" uid="uid://dyihc5gtgqfit" path="res://active_box_2.tscn" id="4_rtbpk"]
 [ext_resource type="PackedScene" uid="uid://chmyj37qtuy63" path="res://active_box_1.tscn" id="5_hdovq"]
@@ -10,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d3suqfygqllev" path="res://box_spawner.tscn" id="7_4txw8"]
 [ext_resource type="PackedScene" uid="uid://b5lv1ie2xh41o" path="res://scenes/flag/flag_level_5.tscn" id="8_piy4x"]
 [ext_resource type="FontFile" uid="uid://cgtx84onhuig3" path="res://fonts/ThaleahFat.ttf" id="9_hajna"]
-[ext_resource type="PackedScene" path="res://void.tscn" id="11_3dlui"]
+[ext_resource type="PackedScene" uid="uid://cxyibal53bb0h" path="res://void.tscn" id="11_3dlui"]
 
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_t2ekl")
@@ -18,12 +17,6 @@ script = ExtResource("1_t2ekl")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
-
-[node name="EndFlag2" type="Sprite2D" parent="ColorRect"]
-modulate = Color(0, 0, 0, 1)
-position = Vector2(1520, 876)
-scale = Vector2(0.109375, 0.171875)
-texture = ExtResource("2_wm027")
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("2_ev8i2")]
 position = Vector2(1920, 700)
@@ -57,7 +50,7 @@ position = Vector2(1135, 842)
 scale = Vector2(5, 1)
 
 [node name="EndFlag" parent="." instance=ExtResource("6_jfgwv")]
-position = Vector2(1504, 939)
+position = Vector2(1499, 938)
 scale = Vector2(0.6, 0.6)
 
 [node name="box_spawner" parent="." instance=ExtResource("7_4txw8")]
@@ -83,7 +76,7 @@ position = Vector2(318, 874)
 scale = Vector2(8, 1)
 
 [node name="StartFlag5" parent="." instance=ExtResource("8_piy4x")]
-position = Vector2(14, 929)
+position = Vector2(17, 930)
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 5
@@ -99,12 +92,6 @@ theme_override_fonts/font = ExtResource("9_hajna")
 theme_override_font_sizes/font_size = 80
 text = "LEVEL 5
 "
-
-[node name="EndFlag2" type="Sprite2D" parent="."]
-modulate = Color(0, 0, 0, 1)
-position = Vector2(60, 820)
-scale = Vector2(0.171875, 0.21875)
-texture = ExtResource("2_wm027")
 
 [node name="Node2D" parent="." instance=ExtResource("11_3dlui")]
 position = Vector2(-40, 13)
