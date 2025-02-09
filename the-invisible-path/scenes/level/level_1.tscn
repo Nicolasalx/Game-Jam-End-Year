@@ -63,6 +63,7 @@ text = "LEVEL 1"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_70pqy")
+volume_db = -20.0
 autoplay = true
 parameters/looping = true
 
@@ -85,22 +86,22 @@ position = Vector2(1280, 706)
 position = Vector2(1138, 792)
 
 [node name="StaticBody2D9" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(1005, 746)
+position = Vector2(982, 735)
 
 [node name="StaticBody2D10" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(883, 803)
+position = Vector2(875, 797)
 
 [node name="StaticBody2D12" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(790, 752)
+position = Vector2(765, 760)
 
 [node name="StaticBody2D13" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(689, 712)
+position = Vector2(655, 681)
 
 [node name="StaticBody2D14" parent="." instance=ExtResource("3_crbsk")]
-position = Vector2(561, 670)
+position = Vector2(536, 636)
 
 [node name="StaticBody2D15" parent="." instance=ExtResource("4_kycfx")]
-position = Vector2(468, 840)
+position = Vector2(428, 854)
 
 [node name="StaticBody2D16" parent="." instance=ExtResource("3_crbsk")]
 position = Vector2(324, 811)

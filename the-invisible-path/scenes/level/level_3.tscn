@@ -98,6 +98,7 @@ text = "LEVEL 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_vc0i1")
+volume_db = -20.0
 autoplay = true
 parameters/looping = true
 

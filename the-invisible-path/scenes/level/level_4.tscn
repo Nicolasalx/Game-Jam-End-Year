@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://duttcl48tevqc"]
+[gd_scene load_steps=11 format=3 uid="uid://bnbjl30x8dgx1"]
 
 [ext_resource type="PackedScene" uid="uid://bk28h837lohuu" path="res://box.tscn" id="1_amdju"]
 [ext_resource type="Script" path="res://scenes/level/level_4.gd" id="1_o1xxr"]
@@ -49,6 +49,7 @@ text = "LEVEL 4"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_ytvlk")
+volume_db = -20.0
 autoplay = true
 parameters/looping = true
 
